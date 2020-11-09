@@ -8,3 +8,5 @@ This is a simple standard task list that contains:
 ## Great Starting Point For Javascript
 
 A staple standard for all new learners of Javascript.
+
+View a live demo [here](https://infallible-almeida-204ecf.netlify.app/) hosted with Netlify.
