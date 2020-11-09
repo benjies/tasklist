@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/74a94616c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Task List Container -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="main" class="card">
+            <!-- Card Content -->
+            <div class="card-content">
+              <span class="card-title">Task List</span>
+              <div class="row">
+                <!-- Task Form -->
+                <form id="task-form">
+                  <div class="input-field col">
+                    <input
+                      type="text"
+                      name="task"
+                      id="task"
+                      placeholder="New Task"
+                      autocomplete="off"
+                    />
+                    <!-- <label for="task">New Task</label> -->
+                  </div>
+                  <!-- Submit -->
+                  <input type="submit" value="Add Task" class="btn" />
+                </form>
+              </div>
+            </div>
+            <!-- Card-Action -->
+            <div class="card-action">
+              <h5 id="task-title">Tasks</h5>
+              <!-- Filter -->
+              <div class="input-field col">
+                <input
+                  type="text"
+                  name="filter"
+                  id="filter"
+                  placeholder="Filter Tasks"
+                  autocomplete="off"
+                />
+                <!-- <label for="filter">Filter Tasks</label> -->
+              </div>
+              <!-- Collection -->
+              <ul class="collection"></ul>
+              <!-- Clear BTN -->
+              <a href="#" class="clear-tasks btn-clr">Clear Tasks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript Source -->
+    <script src="app.js"></script>
+  </body>
+</html>

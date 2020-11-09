@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  margin: 1rem 3rem;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+// Buttons, Inputs, Labels
+.btn {
+  margin: 0.6rem 0 0 0;
+  padding: 1rem 4rem;
+  min-width: 205px;
+  color: #fff;
+  background-color: #33a1fd;
+  border: #2176ff 1px solid;
+  box-shadow: 0 5px 15px rgba($color: #2176ff, $alpha: 0.2);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #2176ff;
+    box-shadow: 0 5px 15px rgba($color: #2176ff, $alpha: 0.5);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.btn-clr {
+  //   margin-top: 2rem;
+  padding: 1rem 4rem;
+  min-width: 205px;
+  color: #fff;
+  background-color: #e0003c;
+  border: #e0003c 1px solid;
+  box-shadow: 0 5px 15px rgba($color: #e0003c, $alpha: 0.2);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #ff1f5a;
+    box-shadow: 0 5px 15px rgba($color: #ff1f5a, $alpha: 0.5);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+// Input for Tasks
+#task,
+#filter {
+  padding: 1rem;
+  border: none;
+  border-bottom: #f79824 0.2rem solid;
+  width: 95%;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  margin: 0.5rem 0;
+}
+
+// List Item
+.collection-item {
+  display: flex;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  width: 98%;
+  border: #f7982473 2px solid;
+  word-break: break-word;
+  #task-text {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .delete-item {
+    color: #e0003c;
+    margin-right: 1rem;
+    transition: all 0.2s;
+    &:hover {
+      color: #2176ff;
+      transition: all 0.2s;
+    }
+  }
+}
